@@ -17,7 +17,7 @@ public class ViewPager2Adapter extends FragmentStateAdapter {
         if (position == 1) {
             return new PickupFragment();
         } else if (position == 2) {
-            return new DelieveryFragment();
+            return new DeliveryFragment();
         } else if (position == 3) {
             return new ReviewFragment();
         } else if (position == 4) {

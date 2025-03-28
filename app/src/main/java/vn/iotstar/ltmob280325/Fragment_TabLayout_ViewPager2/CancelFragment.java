@@ -1,14 +1,13 @@
 package vn.iotstar.ltmob280325.Fragment_TabLayout_ViewPager2;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import vn.iotstar.ltmob280325.R;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
 import vn.iotstar.ltmob280325.databinding.FragmentCancelBinding;
 
 public class CancelFragment extends Fragment {
@@ -17,7 +16,7 @@ public class CancelFragment extends Fragment {
     public CancelFragment() { }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         fragCancelBinding = FragmentCancelBinding.inflate(inflater, container, false);
         return fragCancelBinding.getRoot();

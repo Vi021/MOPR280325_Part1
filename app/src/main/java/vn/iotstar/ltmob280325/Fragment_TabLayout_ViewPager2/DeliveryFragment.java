@@ -8,17 +8,17 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import vn.iotstar.ltmob280325.databinding.FragmentPickupBinding;
+import vn.iotstar.ltmob280325.databinding.FragmentDeliveryBinding;
 
-public class PickupFragment extends Fragment {
-    FragmentPickupBinding fragPickupBinding;
+public class DeliveryFragment extends Fragment {
+    FragmentDeliveryBinding fragDeliveryBinding;
 
-    public PickupFragment() { }
+    public DeliveryFragment() { }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        fragPickupBinding = FragmentPickupBinding.inflate(inflater, container, false);
-        return fragPickupBinding.getRoot();
+        fragDeliveryBinding = FragmentDeliveryBinding.inflate(inflater, container, false);
+        return fragDeliveryBinding.getRoot();
     }
 }
