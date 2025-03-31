@@ -18,12 +18,14 @@
             android:theme="@style/Theme.AppCompat.DayNight">
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolBar"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:minHeight="?actionBarSize"
-                android:padding="12dp"
                 app:title="Fragment and ViewPaper2"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
                 app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
@@ -35,7 +37,7 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager2"
             android:layout_width="match_parent"
-            android:layout_height="628dp"
+            android:layout_height="591dp"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

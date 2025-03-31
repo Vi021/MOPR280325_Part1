@@ -72,17 +72,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeFabIcon(final int index) {
-        mainActBinding.fab.hide();
+        //mainActBinding.fab.hide();
 
         new Handler().postDelayed(() -> {
             if (index == 0) {
-                mainActBinding.fab.setImageDrawable(AppCompatResources.getDrawable(this, android.R.drawable.ic_menu_call));
+                mainActBinding.fab.show();
+                mainActBinding.fab.setImageDrawable(AppCompatResources.getDrawable(this, android.R.drawable.ic_dialog_email));
             } else if (index == 1) {
+                mainActBinding.fab.show();
                 mainActBinding.fab.setImageDrawable(AppCompatResources.getDrawable(this, android.R.drawable.ic_menu_camera));
             } else if (index == 2) {
+                mainActBinding.fab.show();
                 mainActBinding.fab.setImageDrawable(AppCompatResources.getDrawable(this, android.R.drawable.ic_menu_call));
+            } else {
+                mainActBinding.fab.hide();
             }
-        }, 2000);
+        }, 300);
     }
 
     @Override
